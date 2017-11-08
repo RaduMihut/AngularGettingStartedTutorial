@@ -36,7 +36,12 @@ import { ProductGuardService } from './products/product-guard.service';
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
   ],
-  providers: [ ProductService, ProductGuardService ],
-  bootstrap: [AppComponent]
+  providers: [ 
+    ProductService, 
+    ProductGuardService 
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
